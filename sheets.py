@@ -28,5 +28,5 @@ ws4['A31'] = '检测日期：%s' % str(date.today()+timedelta(3)) + '   ' + '星
 ws5['A31'] = '检测日期：%s' % str(date.today()+timedelta(4)) + '   ' + '星期%s' % dicts[str((date.today()+timedelta(4)).isoweekday())] + \
              '   ' + '检测员：丁杰俊 廖娟'
 
-wb.save('newgreens.xlsx')
+wb.save('%s' % date.today() + '-' '%s' % (date.today()+timedelta(4)) + u'蔬菜及水果类.xlsx')
 
